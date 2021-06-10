@@ -2963,11 +2963,6 @@ describe('useQuery Hook', () => {
             });
             break;
           case 4:
-            expect(loading).toBe(true);
-            expect(data).toBeUndefined();
-            expect(previousData).toEqual(data1);
-            break;
-          case 5:
             expect(loading).toBe(false);
             expect(data).toEqual(data3);
             expect(previousData).toEqual(data1);
@@ -2985,7 +2980,7 @@ describe('useQuery Hook', () => {
       );
 
       return wait(() => {
-        expect(renderCount).toBe(5);
+        expect(renderCount).toBe(4);
       }).then(resolve, reject);
     });
   });
