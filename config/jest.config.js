@@ -10,6 +10,7 @@ module.exports = {
       diagnostics: true,
       tsconfig: {
         ...compilerOptions,
+        target: 'esnext',
         allowJs: true,
       },
     },
