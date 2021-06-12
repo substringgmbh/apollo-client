@@ -1207,7 +1207,7 @@ describe('ObservableQuery', () => {
                 observable.refetch().then(result => {
                   expect(result).toEqual({
                     data: {
-                      counter: 5,
+                      counter: 3,
                       name: 'Ben',
                     },
                     loading: false,
